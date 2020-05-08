@@ -1,0 +1,19 @@
+name: 'Repo checker'
+description: 'check you current repo and excute command.'
+author: "qianfeiqianlan"
+inputs:
+  expected-repo:
+    description: 'your expected repo to run customized command'
+    required: true
+  command:
+    description: 'eg. git status'
+    required: true
+outputs:
+  newTag:
+    description: 'The new generated tag'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: "check-square"
+  color: "green"
