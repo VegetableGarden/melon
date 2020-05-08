@@ -1,4 +1,4 @@
 #!/bin/sh
 set -x -e
 
-echo hello world
+echo modify > README.md

@@ -31,3 +31,13 @@ jobs:
         command: |
           chmod +x ./echo.sh
           ./echo.sh
+          
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with:
+        author_name: melon
+        author_email: melon@github.com
+        message: "Add change"
+        add: "*.md"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
