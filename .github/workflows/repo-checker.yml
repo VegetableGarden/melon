@@ -26,12 +26,12 @@ jobs:
       uses: VegetableGarden/melon@0.0.1
       with:
         # your expected repo to run customized command
-        expected-repo: melon
+        expected-repo: melon-skip
         # eg. git status
         command: |
           chmod +x ./echo.sh
           ./echo.sh
-          
+
     - name: Commit changes
       uses: EndBug/add-and-commit@v4
       with:
