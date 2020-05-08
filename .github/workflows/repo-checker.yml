@@ -28,4 +28,6 @@ jobs:
         # your expected repo to run customized command
         expected-repo: melon
         # eg. git status
-        command: ./echo.sh
+        command: |
+          chmod +x ./echo.sh
+          ./echo.sh
